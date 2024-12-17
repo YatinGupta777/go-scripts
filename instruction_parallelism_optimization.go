@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"time"
 )
 
 const increment_times = 1_000_000
@@ -33,19 +32,10 @@ func function2(s [2]int64) [2]int64 {
 	return s
 }
 
-func measureExecutionTime(fn func([2]int64) [2]int64, input [2]int64, name string) time.Duration {
-	start := time.Now()
-	fn(input)
-	duration := time.Since(start)
-	fmt.Printf("%s executed in %v\n", name, duration)
-	return duration
-}
-
 func main() {
 	// Measure the execution time of both functions
-	input := [2]int64{1, 2}
-
+	//input := [2]int64{1, 2}
 	fmt.Println("Comparing execution times:")
-	measureExecutionTime(function1, input, "Function1")
-	measureExecutionTime(function2, input, "Function2")
+	function2([2]int64{1, 2})
+	function1([2]int64{1, 2})
 }
