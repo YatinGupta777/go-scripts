@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 const increment_times = 1_000_000
 
 // This script shows how instruction level parallelism optimizes code
@@ -30,12 +26,4 @@ func function2(s [2]int64) [2]int64 {
 		}
 	}
 	return s
-}
-
-func main() {
-	// Measure the execution time of both functions
-	//input := [2]int64{1, 2}
-	fmt.Println("Comparing execution times:")
-	function2([2]int64{1, 2})
-	function1([2]int64{1, 2})
 }

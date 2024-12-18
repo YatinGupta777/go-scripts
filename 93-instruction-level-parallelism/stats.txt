@@ -1,0 +1,25 @@
+goos: darwin
+goarch: arm64
+pkg: go-scripts/93-instruction-level-parallelism
+BenchmarkAdd-8    	     496	   2062933 ns/op
+BenchmarkAdd-8    	     579	   2060827 ns/op
+BenchmarkAdd-8    	     576	   2060252 ns/op
+BenchmarkAdd-8    	     579	   2062240 ns/op
+BenchmarkAdd-8    	     579	   2059802 ns/op
+BenchmarkAdd-8    	     579	   2066681 ns/op
+BenchmarkAdd-8    	     579	   2070990 ns/op
+BenchmarkAdd-8    	     576	   2134816 ns/op
+BenchmarkAdd-8    	     568	   2163172 ns/op
+BenchmarkAdd-8    	     579	   2069212 ns/op
+BenchmarkAdd2-8   	     577	   2073509 ns/op
+BenchmarkAdd2-8   	     579	   2060486 ns/op
+BenchmarkAdd2-8   	     577	   2205669 ns/op
+BenchmarkAdd2-8   	     496	   2620120 ns/op
+BenchmarkAdd2-8   	     504	   2194206 ns/op
+BenchmarkAdd2-8   	     510	   2090156 ns/op
+BenchmarkAdd2-8   	     578	   2174606 ns/op
+BenchmarkAdd2-8   	     522	   2105328 ns/op
+BenchmarkAdd2-8   	     574	   2172660 ns/op
+BenchmarkAdd2-8   	     543	   2071041 ns/op
+PASS
+ok  	go-scripts/93-instruction-level-parallelism	28.319s

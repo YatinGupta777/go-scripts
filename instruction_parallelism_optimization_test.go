@@ -16,10 +16,6 @@ func simulateCacheClearance(b *testing.B) {
 }
 
 func BenchmarkFunction1(b *testing.B) {
-	simulateCacheClearance(b)
-	// Reset the timer to exclude setup time
-	b.ResetTimer()
-
 	input := [2]int64{0, 0}
 	for i := 0; i < b.N; i++ {
 		function1(input)
@@ -27,10 +23,6 @@ func BenchmarkFunction1(b *testing.B) {
 }
 
 func BenchmarkFunction2(b *testing.B) {
-	simulateCacheClearance(b)
-	// Reset the timer to exclude setup time
-	b.ResetTimer()
-
 	input := [2]int64{0, 0}
 	for i := 0; i < b.N; i++ {
 		function2(input)
