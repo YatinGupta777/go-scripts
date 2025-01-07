@@ -1,0 +1,25 @@
+goos: darwin
+goarch: arm64
+pkg: github.com/teivah/100-go-mistakes/src/03-data-types/27-map-init
+BenchmarkMapWithoutSize-8   	      16	  73567508 ns/op
+BenchmarkMapWithoutSize-8   	      15	  73789789 ns/op
+BenchmarkMapWithoutSize-8   	      16	  68932977 ns/op
+BenchmarkMapWithoutSize-8   	      15	  69121658 ns/op
+BenchmarkMapWithoutSize-8   	      16	  69590896 ns/op
+BenchmarkMapWithoutSize-8   	      16	  68986211 ns/op
+BenchmarkMapWithoutSize-8   	      16	  68215125 ns/op
+BenchmarkMapWithoutSize-8   	      16	  67305229 ns/op
+BenchmarkMapWithoutSize-8   	      16	  67013607 ns/op
+BenchmarkMapWithoutSize-8   	      16	  68104484 ns/op
+BenchmarkMapWithSize-8      	      30	  36624457 ns/op
+BenchmarkMapWithSize-8      	      30	  36579029 ns/op
+BenchmarkMapWithSize-8      	      30	  36444636 ns/op
+BenchmarkMapWithSize-8      	      30	  36240839 ns/op
+BenchmarkMapWithSize-8      	      30	  36680733 ns/op
+BenchmarkMapWithSize-8      	      30	  44694244 ns/op
+BenchmarkMapWithSize-8      	      28	  38637576 ns/op
+BenchmarkMapWithSize-8      	      28	  37546244 ns/op
+BenchmarkMapWithSize-8      	      30	  42672321 ns/op
+BenchmarkMapWithSize-8      	      28	  45321079 ns/op
+PASS
+ok  	github.com/teivah/100-go-mistakes/src/03-data-types/27-map-init	26.536s
